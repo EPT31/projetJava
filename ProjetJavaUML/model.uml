@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_rRbRIH1WEeOf-6Soohhckw" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_rRbRIX1WEeOf-6Soohhckw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_raCakH1WEeOf-6Soohhckw" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_yDZUMH1WEeOf-6Soohhckw" name="projet">
+    <packagedElement xmi:type="uml:Package" xmi:id="_4vD68H1WEeOf-6Soohhckw" name="model">
+      <packagedElement xmi:type="uml:Package" xmi:id="_5IB68H1eEeOf-6Soohhckw" name="utils">
+        <packagedElement xmi:type="uml:Class" xmi:id="_H99HAH1XEeOf-6Soohhckw" clientDependency="_cSlkMH1fEeOf-6Soohhckw" name="Balise">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eC0ZcH1kEeOjoO5DRTC3pQ" name="indicatif" visibility="private" isUnique="false">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r1na8H1kEeOjoO5DRTC3pQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r2eWkH1kEeOjoO5DRTC3pQ" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_r2gLwH1kEeOjoO5DRTC3pQ">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_cSlkMH1fEeOf-6Soohhckw" name="implements" client="_H99HAH1XEeOf-6Soohhckw" supplier="_JEjpEH1fEeOf-6Soohhckw" contract="_JEjpEH1fEeOf-6Soohhckw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_1u-swH1kEeOjoO5DRTC3pQ" name="getIndicatif"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_2sH5MH1eEeOf-6Soohhckw" clientDependency="_c0iasH1fEeOf-6Soohhckw" name="Aerodrome">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_c0iasH1fEeOf-6Soohhckw" name="implements" client="_2sH5MH1eEeOf-6Soohhckw" supplier="_JEjpEH1fEeOf-6Soohhckw" contract="_JEjpEH1fEeOf-6Soohhckw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_L7yQsH1mEeOjoO5DRTC3pQ" name="getNom"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NmJgwH1mEeOjoO5DRTC3pQ" name="getCode"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_JEjpEH1fEeOf-6Soohhckw" name="PdVExtremité">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_QRMKsH1mEeOjoO5DRTC3pQ" name="getLatitude"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_URbtAH1mEeOjoO5DRTC3pQ" name="getLongitude"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fQSAMH1mEeOjoO5DRTC3pQ" name="PositionGPS">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_nEaD0H1mEeOjoO5DRTC3pQ" name="PositionGPS">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_vbPL4H1mEeOjoO5DRTC3pQ" name="chaine"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_r0B0oH1mEeOjoO5DRTC3pQ" name="PositionGPS">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_6yq-MH1mEeOjoO5DRTC3pQ" name="latitude"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_71SRwH1mEeOjoO5DRTC3pQ" name="longitude"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_XEspYH1nEeOjoO5DRTC3pQ" name="" visibility="package" memberEnd="_XEspYX1nEeOjoO5DRTC3pQ _XEsCUH1nEeOjoO5DRTC3pQ">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_XEspYX1nEeOjoO5DRTC3pQ" name="" type="_H99HAH1XEeOf-6Soohhckw" association="_XEspYH1nEeOjoO5DRTC3pQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEspYn1nEeOjoO5DRTC3pQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XEspY31nEeOjoO5DRTC3pQ" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_XEsCUH1nEeOjoO5DRTC3pQ" name="position" type="_fQSAMH1mEeOjoO5DRTC3pQ" aggregation="composite" association="_XEspYH1nEeOjoO5DRTC3pQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEsCUX1nEeOjoO5DRTC3pQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XEsCUn1nEeOjoO5DRTC3pQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_8gR6EH1nEeOjoO5DRTC3pQ" name="" memberEnd="_8gR6EX1nEeOjoO5DRTC3pQ _8gRTAH1nEeOjoO5DRTC3pQ">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_8gR6EX1nEeOjoO5DRTC3pQ" name="" type="_2sH5MH1eEeOf-6Soohhckw" association="_8gR6EH1nEeOjoO5DRTC3pQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8gR6En1nEeOjoO5DRTC3pQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8gR6E31nEeOjoO5DRTC3pQ" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_8gRTAH1nEeOjoO5DRTC3pQ" name="position" type="_fQSAMH1mEeOjoO5DRTC3pQ" aggregation="composite" association="_8gR6EH1nEeOjoO5DRTC3pQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8gRTAX1nEeOjoO5DRTC3pQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8gRTAn1nEeOjoO5DRTC3pQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_7vRl0H1lEeOjoO5DRTC3pQ" name="view"/>
+  </packagedElement>
+</uml:Model>
